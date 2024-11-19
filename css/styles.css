@@ -1,0 +1,115 @@
+:root {
+    --primario: #D9D7D7;
+    --secundario: #45BF70;
+    --terciario: #2F2C25;
+    --primario_alpha: #d9d7d76e;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    background-image: url(/img/background.png);
+    background-size: cover;
+    background-position: center;
+    background-color: var(--primario);
+}
+
+header {
+    height: 10dvh;
+    background-color: var(--primario);
+    border-bottom: var(--terciario) 1px dotted;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+header > h1 {
+    font-weight: 800;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: var(--terciario);
+}
+
+header > nav {
+    width: 20%;
+}
+
+header > nav > ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header > nav > ul > li {
+    color: var(--terciario);
+}
+
+header > nav > ul > li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header > nav > ul > li.seleccionado{
+    color: var(--secundario);
+    font-weight: bold;
+}
+
+main {
+    height: 90dvh;
+    overflow: hidden;
+    background-color: var(--primario_alpha);
+    backdrop-filter: blur(10px);
+}
+
+.columns {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.column {
+    padding: 25px 10px;
+    position: relative;
+    width: 25%;
+    min-height: 100%;
+    background-color: var(--primario);
+}
+
+.column > h2 {
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    font-weight: 900;
+    color: var(--secundario);
+}
+
+.column > h3 {
+    color: var(--terciario);
+}
+
+.column > p {
+    margin-bottom: 5px;
+    color: var(--terciario);
+}
+
+.column > img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.column:nth-child(1) {
+    border-right: 1px dotted var(--terciario);
+}
+
+.column:nth-child(2), .column:nth-child(3) {
+    border-right: 1px dotted var(--terciario);
+    border-left: 1px dotted var(--terciario);
+}
+
+.column:nth-child(4) {
+    border-left: 1px dotted var(--terciario);
+}
