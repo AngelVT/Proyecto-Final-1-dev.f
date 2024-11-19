@@ -80,9 +80,6 @@ main {
     width: 25%;
     min-height: 100%;
     background-color: var(--primario);
-
-    overflow-y: scroll;
-    scrollbar-width: none;
 }
 
 .column > h2 {
